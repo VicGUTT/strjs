@@ -32,11 +32,11 @@ strFinish(strTrimEnd(strUpperFirst(strReplaceMany(['-', '_'], ' ', strAfter(stri
 Install the plugin via NPM _(or yarn)_:
 
 ```bash
-npm i @VicGUTT/strjs
+npm i @vicgutt/strjs
 ```
 
 ```bash
-yarn add @VicGUTT/strjs
+yarn add @vicgutt/strjs
 ```
 
 **Note**: This library is very "future facing" in the code that is distributed _(dist folder)_, meaning it requires at least Node14+ and ES2020/ES2021 support from your JS compiler/bundler or browser.
