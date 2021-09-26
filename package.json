@@ -16,6 +16,9 @@
         ".": {
             "import": "./dist/strjs.es.js",
             "require": "./dist/strjs.umd.js"
+        },
+        "./*": {
+            "import": "./dist/*.js"
         }
     },
     "files": [
