@@ -1,6 +1,6 @@
 {
     "name": "@vicgutt/strjs",
-    "version": "0.0.0",
+    "version": "0.1.0",
     "description": "A set of JavaScript string helpers",
     "author": "Victor GUTT <guttvictor@yahoo.fr> (https://victorgutt.dev)",
     "license": "MIT",
