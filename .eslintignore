@@ -1,0 +1,11 @@
+/node_modules
+/tests/__Fixtures/.css
+/tests/__Fixtures/.json
+/tests/__Fixtures/.html
+/dist
+/dist-ssr
+/.coverage
+/.temp
+/.vic
+*.vic
+!.prettierrc.json

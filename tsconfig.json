@@ -1,0 +1,30 @@
+{
+    "include": ["./src", "./types"],
+    "compilerOptions": {
+        "types": ["vite/client", "jest", "node" /* , "./tests/__types/global" , "./tests/__types/modules" */],
+
+        "target": "ESNEXT",
+        "module": "ESNext",
+        "lib": ["ESNext", "DOM"],
+        "moduleResolution": "Node",
+        "strict": true,
+        "strictNullChecks": true,
+        "sourceMap": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitReturns": true,
+        "isolatedModules": true,
+
+        "importHelpers": true,
+        "declaration": true,
+        "rootDir": "./src",
+        "noFallthroughCasesInSwitch": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "allowJs": true,
+
+        "outDir": "./dist"
+    }
+}

@@ -1,0 +1,71 @@
+#--------------------------------------------------------------------------
+# Goals and basic feature support (as of august 2021)
+#--------------------------------------------------------------------------
+#
+# The goal is to be able to safely, natively, bloat free, ship web features.
+# The browser should have support for at the very least `ESM script tag`
+# and `native ESM dynamic import` (ViteJS's default target).
+#
+# This following config should not settle for less than 90% overall browser
+# coverage on browserslist.dev and caniuse.com.
+# Forthemore support for the latest versions of the following browsers should
+# be assured (based on https://gs.statcounter.com's worldwide browser market share) :
+# - Chrome
+# - Safari
+# - Firefox
+# - Edge
+# - Samsung
+# - Opera
+# - Chrome For Android
+# - Safari For IOS
+#
+# - https://caniuse.com/es6-module
+# - https://caniuse.com/es6-module-dynamic-import
+# - https://vitejs.dev/guide/build.html#browser-compatibility
+
+supports es6-module and supports es6-module-dynamic-import
+
+
+#--------------------------------------------------------------------------
+# Minimum browser versions
+#--------------------------------------------------------------------------
+#
+# Naive strategy to target browsers with full support for ES2021.
+# Essentially targeting browsers with full support for `Private class fields`.
+#
+# Shorter Browserslist query : `supports private-class-fields`.
+#
+# - https://caniuse.com/?search=private-class-fields
+# - https://tc39.es/ecma262/#sec-intro
+
+chrome >= 74        # Chrome
+edge >= 79          # Edge
+ios_saf >= 14.5     # iOS
+opera >= 62         # Opera
+safari >= 14.1      # Safari
+samsung >= 11.1     # Samsung
+ff >= 90            # Firefox
+op_mob >= 64        # Opera Mobile
+and_chr >= 92       # Chrome Android
+and_ff >= 90        # Firefox Android
+
+
+#--------------------------------------------------------------------------
+# Browser versions based on publication dates
+#--------------------------------------------------------------------------
+#
+# - https://github.com/browserslist/browserslist#full-list
+
+since 2020
+last 2 years
+
+
+#--------------------------------------------------------------------------
+# Debug
+#--------------------------------------------------------------------------
+
+# npx browserslist
+# https://github.com/browserslist/browserslist#debug
+
+# supports es6-module and supports es6-module-dynamic-import, chrome >= 74, edge >= 79, ios_saf >= 14.5, opera >= 62, safari >= 14.1, samsung >= 11.1, ff >= 90, op_mob >= 64, and_chr >= 92, and_ff >= 90, since 2020, last 2 years
+# https://browserslist.dev/?q=c3VwcG9ydHMgZXM2LW1vZHVsZSBhbmQgc3VwcG9ydHMgZXM2LW1vZHVsZS1keW5hbWljLWltcG9ydCwgY2hyb21lID49IDc0LCBlZGdlID49IDc5LCBpb3Nfc2FmID49IDE0LjUsIG9wZXJhID49IDYyLCBzYWZhcmkgPj0gMTQuMSwgc2Ftc3VuZyA%2BPSAxMS4xLCBmZiA%2BPSA5MCwgb3BfbW9iID49IDY0LCBhbmRfY2hyID49IDkyLCBhbmRfZmYgPj0gOTAsIHNpbmNlIDIwMjAsIGxhc3QgMiB5ZWFycw%3D%3D

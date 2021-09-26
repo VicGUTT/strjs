@@ -1,0 +1,126 @@
+{
+    "name": "@vicgutt/strjs",
+    "version": "0.0.0",
+    "description": "A set of JavaScript string helpers",
+    "author": "Victor GUTT <guttvictor@yahoo.fr> (https://victorgutt.dev)",
+    "license": "MIT",
+    "keywords": [
+        "helpers",
+        "utilities",
+        "string"
+    ],
+    "main": "./dist/strjs.umd.js",
+    "module": "./dist/strjs.es.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/strjs.es.js",
+            "require": "./dist/strjs.umd.js"
+        }
+    },
+    "files": [
+        "dist",
+        "src"
+    ],
+    "engines": {
+        "node": ">=14"
+    },
+    "scripts": {
+        "watch": "vite",
+        "preview": "vite preview",
+        "types": "tsc --emitDeclarationOnly",
+        "prod": "vite build && npm run types",
+        "build": "npm run prod",
+        "------------------------------------- | AUTO | -------------------------------------": "",
+        "prepare": "npm run prod",
+        "postinstall": "npm run init",
+        "prepublishOnly": "pinst --disable",
+        "postpublish": "pinst --enable",
+        "------------------------------------- | INIT | -------------------------------------": "",
+        "init": "npm run init:test && npm run init:husky",
+        "init:test": "IF NOT EXIST jest.config.js (npx ts-jest config:init)",
+        "init:husky": "husky install",
+        "------------------------------------- | TEST | -------------------------------------": "",
+        "test": "jest",
+        "test:clear": "jest --clearCache",
+        "test:watch": "jest --watch",
+        "test:coverage": "jest --coverage",
+        "test:watch:index": "jest --watch --testPathPattern=index.test.ts",
+        "test:watch:_": "jest --watch --testPathPattern=_.test.ts",
+        "test:watch:str": "jest --watch --testPathPattern=./tests/str/*",
+        "test:watch:utils": "jest --watch --testPathPattern=utils/*",
+        "test:watch:stringable": "jest --watch --testPathPattern=./tests/str/Stringable.test.ts",
+        "test:watch:[filtered]": "jest --watch --testPathPattern=./tests/str/strRandom.test.ts",
+        "------------------------------------- | LINT | -------------------------------------": "",
+        "lint": "eslint . --max-warnings=0",
+        "lint:src": "eslint ./src --max-warnings=0",
+        "lint:tests": "eslint ./tests --max-warnings=0",
+        "fix": "eslint . --max-warnings=0 --fix",
+        "fix:src": "eslint ./src --max-warnings=0 --fix",
+        "fix:tests": "eslint ./tests --max-warnings=0 --fix",
+        "------------------------------------- | CUTE | -------------------------------------": "",
+        "format": "prettier **/*.{ts,js,json,html,yml,md,css,php,vue} -l",
+        "format:fix": "prettier **/*.{ts,js,json,html,yml,md,css,php,vue} --write",
+        "------------------------------------- | PUBL | -------------------------------------": "",
+        "release": "np",
+        "release:preview": "np --preview",
+        "------------------------------------- | MISC | -------------------------------------": "",
+        "size": "npm run prod && size-limit",
+        "analyze": "npm run prod && size-limit --why"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^13.1.0",
+        "@commitlint/config-conventional": "^13.1.0",
+        "@size-limit/preset-small-lib": "^5.0.3",
+        "@types/jest": "^27.0.1",
+        "@types/node": "^16.6.1",
+        "@typescript-eslint/eslint-plugin": "^4.29.1",
+        "@typescript-eslint/parser": "^4.29.1",
+        "eslint": "^7.32.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-eslint-comments": "^3.2.0",
+        "eslint-plugin-jsonc": "^1.5.0",
+        "eslint-plugin-prettier": "^3.4.0",
+        "hoax.js": "^1.0.1",
+        "husky": "^7.0.1",
+        "jest": "^27.0.6",
+        "jsdoc-to-markdown": "^7.0.1",
+        "lint-staged": "^11.1.2",
+        "np": "^7.5.0",
+        "pinst": "^2.1.6",
+        "prettier": "^2.3.2",
+        "size-limit": "^5.0.3",
+        "ts-jest": "^27.0.4",
+        "tslib": "^2.3.1",
+        "typescript": "^4.4.3",
+        "vite": "^2.4.4"
+    },
+    "homepage": "https://github.com/VicGUTT/strjs#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/VicGUTT/strjs.git"
+    },
+    "bugs": {
+        "url": "https://github.com/VicGUTT/strjs/issues"
+    },
+    "size-limit": [
+        {
+            "path": "dist/strjs.es.js",
+            "limit": "5 KB"
+        },
+        {
+            "path": "dist/strjs.umd.js",
+            "limit": "5 KB"
+        },
+        {
+            "path": "dist/**/*.js",
+            "limit": "10 KB"
+        }
+    ],
+    "np": {
+        "yarn": false
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}

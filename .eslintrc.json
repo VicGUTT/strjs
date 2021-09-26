@@ -1,0 +1,94 @@
+{
+    "root": true,
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint"],
+    "extends": [
+        "eslint:recommended",
+        "plugin:eslint-comments/recommended",
+        "plugin:jsonc/recommended-with-jsonc",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended"
+    ],
+    "overrides": [
+        {
+            "files": ["package.json"],
+            "parser": "jsonc-eslint-parser",
+            "rules": {
+                "jsonc/sort-keys": [
+                    "error",
+                    {
+                        "pathPattern": "^$",
+                        "order": [
+                            "name",
+                            "version",
+                            "description",
+                            "author",
+                            "funding",
+                            "license",
+                            "keywords",
+
+                            "main",
+                            "module",
+                            "types",
+                            "typings",
+                            "type",
+                            "exports",
+                            "files",
+                            "engines",
+                            "bin",
+                            "scripts",
+
+                            "devDependencies",
+                            "dependencies",
+                            "peerDependencies",
+                            "peerDependenciesMeta",
+
+                            "unpkg",
+                            "homepage",
+                            "repository",
+                            "bugs",
+
+                            "husky",
+                            "size-limit",
+                            "np",
+                            "publishConfig",
+                            "prettier",
+                            "lint-staged",
+                            "eslintConfig"
+                        ]
+                    },
+                    {
+                        "pathPattern": "^(?:dev|peer|optional|bundled)?[Dd]ependencies$",
+                        "order": {
+                            "type": "asc"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "rules": {
+        "curly": "error",
+        "eqeqeq": "error",
+        "yoda": "error"
+        // "new-parens": ["error", "never"],
+        // "no-extra-parens": "off"
+        // "no-extra-parens": [
+        //     "error",
+        //     "all",
+        //     {
+        //         "nestedBinaryExpressions": false,
+        //         "enforceForArrowConditionals": false,
+        //         "enforceForSequenceExpressions": false,
+        //         "enforceForNewInMemberExpressions": false,
+        //         "enforceForFunctionPrototypeMethods": false
+        //     }
+        // ]
+    }
+}

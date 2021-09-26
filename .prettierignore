@@ -1,0 +1,9 @@
+/node_modules
+/tests/__Fixtures
+/dist
+/dist-ssr
+/.coverage
+/.temp
+/.vscode
+/.vic
+*.vic
