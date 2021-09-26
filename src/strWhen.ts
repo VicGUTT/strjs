@@ -17,7 +17,7 @@
  *     return 'bye';
  * }); // 'bye'
  *
- * str.when(
+ * strWhen(
  *     false,
  *     'hello',
  *     (instance, condition) => {

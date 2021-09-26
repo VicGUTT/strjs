@@ -73,9 +73,14 @@ export default async function generateReadme() {
 
 async function getData() {
     const fileNames = new Set();
+
     return (await jsdoc2md.getJsdocData({ files: 'dist/*.js' }))
         .filter((item) => item.comment?.trim().length && item.meta)
         .filter((item) => {
+            if (item.meta.filename === 'Stringable.js') {
+                return false;
+            }
+
             if (fileNames.has(item.meta.filename)) {
                 return false;
             }

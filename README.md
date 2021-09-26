@@ -11,11 +11,13 @@ import str from '@vicgutt/strjs';
 
 const string = 'Quote:the-eyes-are_useless_when_the-mind-is-blind!!!s';
 
-str(string).after(':').replaceMany(['-', '_'], ' ').upperFirst().trimEnd('s').finish('!'); // The eyes are useless when the mind is blind!
+str(string).after(':').replaceMany(['-', '_'], ' ').upperFirst().trimEnd('s').finish('!');
+// The eyes are useless when the mind is blind!
 
 // or
 
-str.finish(str.trimEnd(str.upperFirst(str.replaceMany(['-', '_'], ' ', str.after(string, ':'))), 's'), '!'); // The eyes are useless when the mind is blind!
+str.finish(str.trimEnd(str.upperFirst(str.replaceMany(['-', '_'], ' ', str.after(string, ':'))), 's'), '!');
+// The eyes are useless when the mind is blind!
 
 // or (enables tree-shaking)
 import strFinish from '@vicgutt/strjs/strFinish';
@@ -24,7 +26,8 @@ import strUpperFirst from '@vicgutt/strjs/strUpperFirst';
 import strReplaceMany from '@vicgutt/strjs/strReplaceMany';
 import strAfter from '@vicgutt/strjs/strAfter';
 
-strFinish(strTrimEnd(strUpperFirst(strReplaceMany(['-', '_'], ' ', strAfter(string, ':'))), 's'), '!'); // The eyes are useless when the mind is blind!
+strFinish(strTrimEnd(strUpperFirst(strReplaceMany(['-', '_'], ' ', strAfter(string, ':'))), 's'), '!');
+// The eyes are useless when the mind is blind!
 ```
 
 ## Installation
@@ -424,11 +427,6 @@ strFinish('this/string', '/'); // 'this/string/'
 strFinish('this/string/', '/'); // 'this/string/'
 strFinish('this/string////', '/'); // 'this/string/'
 ```
-
-### • **str.stringable / Stringable** _([Source](https://github.com/VicGUTT/strjs/blob/main/src/Stringable.ts) | [Tests](https://github.com/VicGUTT/strjs/blob/main/tests/str/Stringable.test.ts))_
-
-Return the remainder of a string after the first occurrence of a given value.
-The entire string will be returned if the value does not exist within the string.
 
 ### • **str.is / strIs** _([Source](https://github.com/VicGUTT/strjs/blob/main/src/strIs.ts) | [Tests](https://github.com/VicGUTT/strjs/blob/main/tests/str/strIs.test.ts))_
 
@@ -1200,7 +1198,7 @@ strWhen(true, 'hello', (instance, condition) => {
     return 'bye';
 }); // 'bye'
 
-str.when(
+strWhen(
     false,
     'hello',
     (instance, condition) => {
@@ -1276,7 +1274,7 @@ Example:
 ```js
 str('hello').length; // 5
 str('hello') + ' world'; // 'hello world'
-+str('7') + ' world'; // 7
++str('7'); // 7
 ```
 
 **Note:** It's important to note that some inherited methods may have been altered to either be a little more convenient or to simply return an instance of `Stringable` instead of `String` where appropriate.
@@ -1325,12 +1323,6 @@ The following methods have been sligthly altered and mapped to a corresponding `
 -   trim -> strTrim
 -   trimEnd -> rtrim
 -   trimStart -> ltrim
-
-```js
-{
-    // ...
-}
-```
 
 ### Own methods
 
