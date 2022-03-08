@@ -1133,7 +1133,7 @@ function strUcfirst(value: string): string;
 **Example**
 
 ```js
-strLcfirst('victoria'); // 'Victoria'
+strUcfirst('victoria'); // 'Victoria'
 ```
 
 ### • **str.ucwords / strUcwords** _([Source](https://github.com/VicGUTT/strjs/blob/main/src/strUcwords.ts) | [Tests](https://github.com/VicGUTT/strjs/blob/main/tests/str/strUcwords.test.ts))_
@@ -1296,7 +1296,7 @@ str(
 
 ### Base `String` method overrides
 
-As previously state, some methods inherited from the base `String` object may have been overriden in order to be a little more convenient or to simply return an instance of `Stringable` instead of `String` where appropriate.
+As previously stated, some methods inherited from the base `String` object may have been overriden in order to be a little more convenient or to simply return an instance of `Stringable` instead of `String` where appropriate.
 
 The following methods have the exact same behavior but return an instance or instances of `Stringable`:
 

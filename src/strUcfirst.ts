@@ -6,7 +6,7 @@
  *
  * @example
  * ```js
- * strLcfirst('victoria'); // 'Victoria'
+ * strUcfirst('victoria'); // 'Victoria'
  * ```
  */
 export default function strUcfirst(value: string): string {
