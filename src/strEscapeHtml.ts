@@ -16,7 +16,7 @@ export default function strEscapeHtml(value: string): string {
 }
 
 /**
- * @see https://github.com/vuejs/vue-next/blob/4fe4de0a49ffc2461b0394e74674af38ff5e2a20/packages/shared/src/escapeHtml.ts
+ * @see https://github.com/vuejs/core/blob/5898629d723e82b68e9b17b91bf8b1a8390a3912/packages/shared/src/escapeHtml.ts
  */
 const escapeRE = /["'&<>]/;
 
@@ -55,12 +55,12 @@ function _escapeHtml(string: unknown) {
         }
 
         if (lastIndex !== index) {
-            html += str.substring(lastIndex, index);
+            html += str.slice(lastIndex, index);
         }
 
         lastIndex = index + 1;
         html += escaped;
     }
 
-    return lastIndex !== index ? html + str.substring(lastIndex, index) : html;
+    return lastIndex !== index ? html + str.slice(lastIndex, index) : html;
 }

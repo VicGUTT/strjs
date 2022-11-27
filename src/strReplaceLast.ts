@@ -34,7 +34,7 @@ export default function strReplaceLast(search: string, replace: string, subject:
 
     return [
         subject.slice(0, position),
-        replace.substr(0, search.length),
+        replace.slice(0, search.length),
         replace.slice(search.length),
         subject.slice(position + search.length),
     ].join('');

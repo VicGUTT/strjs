@@ -578,6 +578,8 @@ class Stringable extends String {
     /**
      * Gets a substring beginning at the specified location and having
      * the specified length.
+     *
+     * @deprecated Use `.slice` instead.
      */
     // @ts-expect-error shush
     substr(from: number, length?: number): Stringable {

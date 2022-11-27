@@ -14,7 +14,7 @@
  * ```
  */
 export default function strLimit(value: string, limit = 100, end = '...'): string {
-    return value.length > limit ? value.substr(0, limit) + end : value;
+    return value.length > limit ? value.slice(0, limit) + end : value;
 }
 
 /**
