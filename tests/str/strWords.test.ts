@@ -1,6 +1,7 @@
+import { describe, it, expect } from 'vitest';
 import strWords from '../../src/strWords';
 
-describe('str:strWords', () => {
+describe('str/strWords', () => {
     it('works', () => {
         expect(strWords('', 1)).toEqual('');
         expect(strWords(' ', 1)).toEqual(' ');

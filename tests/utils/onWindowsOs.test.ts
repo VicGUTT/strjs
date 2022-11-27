@@ -1,12 +1,13 @@
 /**
- * @jest-environment jsdom
+ * @vitest-environment jsdom
  */
 
+import { describe, it, expect } from 'vitest';
 import onWindowsOs from '../../src/utils/onWindowsOs';
 
 const isReallyOnWindows = process.platform === 'win32';
 
-describe('utils:onWindowsOs', () => {
+describe('utils/onWindowsOs', () => {
     it('works', () => {
         expect(onWindowsOs()).toEqual(_onWindowsOs());
         expect(onWindowsOs()).toEqual(isReallyOnWindows);
@@ -49,7 +50,7 @@ describe('utils:onWindowsOs', () => {
 });
 
 function _os(): string | null {
-    let os = null;
+    let os: typeof process.platform | string | null = null;
 
     if (typeof process !== 'undefined' && process.platform) {
         os = process.platform;

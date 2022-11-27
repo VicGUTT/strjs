@@ -1,9 +1,10 @@
+import { describe, it, expect } from 'vitest';
 import strBefore from '../../src/strBefore';
 import strPortion from '../../src/strPortion';
 
 const _strPortion = (subject: string, search: string) => strPortion(subject, search, true, true);
 
-describe('str:strBefore', () => {
+describe('str/strBefore', () => {
     it('works', () => {
         expect(strBefore('hannah', 'nah')).toEqual(_strPortion('hannah', 'nah'));
         expect(strBefore('hannah', 'n')).toEqual(_strPortion('hannah', 'n'));

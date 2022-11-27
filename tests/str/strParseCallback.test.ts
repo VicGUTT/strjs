@@ -1,6 +1,7 @@
+import { describe, it, expect } from 'vitest';
 import strParseCallback from '../../src/strParseCallback';
 
-describe('str:strParseCallback', () => {
+describe('str/strParseCallback', () => {
     it('works', () => {
         expect(strParseCallback('Class@method', 'foo')).toEqual(['Class', 'method']);
         expect(strParseCallback('Class', 'foo')).toEqual(['Class', 'foo']);

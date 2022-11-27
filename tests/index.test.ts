@@ -1,8 +1,15 @@
+import { describe, it, test, expect } from 'vitest';
 import file from './__utils/file';
 import Stringable from '../src/Stringable';
 import str from '../src';
 
-describe('str', () => {
+type _Meta = {
+    glob: (...args: unknown[]) => Record<string, { default: () => unknown }>;
+};
+
+const strFiles = (import.meta as unknown as _Meta).glob('../src/*.ts', { eager: true });
+
+describe('index', () => {
     it('returns an instance of `Stringable` when invoked', () => {
         expect(typeof str).toEqual('function');
         expect(str() instanceof Stringable).toEqual(true);
@@ -27,14 +34,13 @@ describe('str', () => {
     file.strSrcFiles.forEach((file) => {
         const imported = {
             name: file.replace('.ts', ''),
-            run: require(`../src/${file}`).default, // eslint-disable-line @typescript-eslint/no-var-requires
+            run: strFiles[`../src/${file}`].default,
         };
         const method = {
             get name(): string {
                 return this.makeName(imported.name);
             },
             get run(): (...args: unknown[]) => unknown {
-                // @ts-expect-error Go take a walk TS
                 return str[this.name];
             },
             makeName(val: string): string {

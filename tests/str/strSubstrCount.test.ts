@@ -1,6 +1,7 @@
+import { describe, it, expect } from 'vitest';
 import strSubstrCount from '../../src/strSubstrCount';
 
-describe('str:strSubstrCount', () => {
+describe('str/strSubstrCount', () => {
     it('works', () => {
         expect(strSubstrCount('This is a string.', ' is')).toEqual(1);
         expect(strSubstrCount('This is a string.', 'is ')).toEqual(2);

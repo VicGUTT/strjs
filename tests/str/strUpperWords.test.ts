@@ -1,7 +1,8 @@
+import { describe, it, expect } from 'vitest';
 import strUcwords from '../../src/strUcwords';
 import strUpperWords from '../../src/strUpperWords';
 
-describe('str:strUpperWords', () => {
+describe('str/strUpperWords', () => {
     it('works', () => {
         expect(strUpperWords).toEqual(strUcwords);
 

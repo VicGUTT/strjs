@@ -1,8 +1,9 @@
+import { describe, it, expect } from 'vitest';
 import strIsAscii from '../../src/strIsAscii';
 import asciiCharacters from '../__Fixtures/ascii-characters';
 import nonAsciiCharacters from '../__Fixtures/non-ascii-characters';
 
-describe('str:strIsAscii', () => {
+describe('str/strIsAscii', () => {
     it('works', () => {
         expect(strIsAscii('Gutt')).toEqual(true);
         expect(strIsAscii('Gütt')).toEqual(false);

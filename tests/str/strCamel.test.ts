@@ -1,6 +1,7 @@
+import { describe, it, expect } from 'vitest';
 import strCamel from '../../src/strCamel';
 
-describe('str:strCamel', () => {
+describe('str/strCamel', () => {
     it('works', () => {
         expect(strCamel('Laravel_p_h_p_framework')).toEqual('laravelPHPFramework');
         expect(strCamel('Laravel_php_framework')).toEqual('laravelPhpFramework');

@@ -1,6 +1,7 @@
+import { describe, it, expect } from 'vitest';
 import strTitle from '../../src/strTitle';
 
-describe('str:strTitle', () => {
+describe('str/strTitle', () => {
     it('works', () => {
         expect(strTitle('jefferson costella')).toEqual('Jefferson Costella');
         expect(strTitle('jefFErson coSTella')).toEqual('Jefferson Costella');

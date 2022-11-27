@@ -1,6 +1,7 @@
+import { describe, it, expect } from 'vitest';
 import strAppend from '../../src/strAppend';
 
-describe('str:strAppend', () => {
+describe('str/strAppend', () => {
     it('works', () => {
         expect(strAppend('hey', 'world')).toEqual('heyworld');
         expect(strAppend('hey', ' world')).toEqual('hey world');

@@ -1,9 +1,10 @@
+import { describe, it, expect } from 'vitest';
 import strAfter from '../../src/strAfter';
 import strPortion from '../../src/strPortion';
 
 const _strPortion = (subject: string, search: string) => strPortion(subject, search, false, true);
 
-describe('str:strAfter', () => {
+describe('str/strAfter', () => {
     it('works', () => {
         expect(strAfter('hannah', 'han')).toEqual(_strPortion('hannah', 'han'));
         expect(strAfter('hannah', 'n')).toEqual(_strPortion('hannah', 'n'));

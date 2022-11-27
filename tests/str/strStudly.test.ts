@@ -1,6 +1,7 @@
+import { describe, it, expect } from 'vitest';
 import strStudly from '../../src/strStudly';
 
-describe('str:strStudly', () => {
+describe('str/strStudly', () => {
     it('works', () => {
         expect(strStudly('laravel_php_framework')).toEqual('LaravelPhpFramework');
         expect(strStudly('laravel-phP-framework')).toEqual('LaravelPhPFramework');

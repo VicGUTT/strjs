@@ -1,6 +1,7 @@
+import { describe, it, expect } from 'vitest';
 import strPrepend from '../../src/strPrepend';
 
-describe('str:strPrepend', () => {
+describe('str/strPrepend', () => {
     it('works', () => {
         expect(strPrepend('hey', 'world')).toEqual('worldhey');
         expect(strPrepend('hey', ' world')).toEqual(' worldhey');

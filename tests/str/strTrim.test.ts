@@ -1,6 +1,7 @@
+import { describe, it, expect } from 'vitest';
 import strTrim, { STR_TRIM_BOTH, STR_TRIM_LEFT, STR_TRIM_RIGHT } from '../../src/strTrim';
 
-describe('str:strTrim', () => {
+describe('str/strTrim', () => {
     it('can trim the left side (start)', () => {
         expect(_trimLeft('Hello World')).toEqual('Hello World');
         expect(_trimLeft(' foo ')).toEqual('foo ');

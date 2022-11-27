@@ -1,6 +1,7 @@
+import { describe, it, expect } from 'vitest';
 import strStart from '../../src/strStart';
 
-describe('str:strStart', () => {
+describe('str/strStart', () => {
     it('works', () => {
         expect(strStart('ab', 'bc')).toEqual('bcab');
         expect(strStart('ababbc', 'ab')).toEqual('abbc');

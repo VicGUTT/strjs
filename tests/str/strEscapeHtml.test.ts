@@ -1,6 +1,7 @@
+import { describe, it, expect } from 'vitest';
 import strEscapeHtml from '../../src/strEscapeHtml';
 
-describe('str:strEscapeHtml', () => {
+describe('str/strEscapeHtml', () => {
     it('works', () => {
         expect(strEscapeHtml('<div>Hey</div>')).toEqual('&lt;div&gt;Hey&lt;/div&gt;');
         expect(strEscapeHtml('<DIV>Hey</dIv>')).toEqual('&lt;DIV&gt;Hey&lt;/dIv&gt;');

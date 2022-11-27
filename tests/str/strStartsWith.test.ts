@@ -1,6 +1,7 @@
+import { describe, it, expect } from 'vitest';
 import strStartsWith from '../../src/strStartsWith';
 
-describe('str:strStartsWith', () => {
+describe('str/strStartsWith', () => {
     it('works with non ascii strings', () => {
         expect(strStartsWith('jason', 'jas')).toEqual(true);
         expect(strStartsWith('jason', 'jason')).toEqual(true);

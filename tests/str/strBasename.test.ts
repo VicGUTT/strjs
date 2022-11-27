@@ -1,6 +1,7 @@
+import { describe, it, expect } from 'vitest';
 import strBasename from '../../src/strBasename';
 
-describe('str:strBasename', () => {
+describe('str/strBasename', () => {
     it('works', () => {
         expect(strBasename('/etc/sudoers.d', '.d')).toEqual('sudoers');
         expect(strBasename('/etc/sudoers.d')).toEqual('sudoers.d');

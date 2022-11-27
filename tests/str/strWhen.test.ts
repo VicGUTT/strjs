@@ -1,6 +1,7 @@
+import { describe, test, expect } from 'vitest';
 import strWhen from '../../src/strWhen';
 
-describe('str:strWhen', () => {
+describe('str/strWhen', () => {
     test('when truthy', () => {
         const dummy = new Dummy();
 

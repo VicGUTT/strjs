@@ -1,6 +1,7 @@
+import { describe, it, expect } from 'vitest';
 import escapeRegExp from '../../src/utils/escapeRegExp';
 
-describe('utils:escapeRegExp', () => {
+describe('utils/escapeRegExp', () => {
     it('works', () => {
         expect(escapeRegExp('The Quick Brown Fox')).toEqual('The\\ Quick\\ Brown\\ Fox');
         expect(escapeRegExp('Our ability*')).toEqual('Our\\ ability\\*');

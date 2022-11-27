@@ -1,6 +1,7 @@
+import { describe, it, expect } from 'vitest';
 import strSlug from '../../src/strSlug';
 
-describe('str:strSlug', () => {
+describe('str/strSlug', () => {
     it('works', () => {
         expect(strSlug('hello world')).toEqual('hello-world');
         expect(strSlug('hello-world')).toEqual('hello-world');

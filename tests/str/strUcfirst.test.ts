@@ -1,6 +1,7 @@
+import { describe, it, expect } from 'vitest';
 import strUcfirst from '../../src/strUcfirst';
 
-describe('str:strUcfirst', () => {
+describe('str/strUcfirst', () => {
     it('works', () => {
         expect(strUcfirst('laravel')).toEqual('Laravel');
         expect(strUcfirst('laravel framework')).toEqual('Laravel framework');

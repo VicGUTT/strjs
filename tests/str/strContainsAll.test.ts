@@ -1,6 +1,7 @@
+import { describe, it, expect } from 'vitest';
 import strContainsAll from '../../src/strContainsAll';
 
-describe('str:strContainsAll', () => {
+describe('str/strContainsAll', () => {
     it('works', () => {
         expect(strContainsAll('Victor Gutt', ['Victor', 'Gutt'])).toEqual(true);
         expect(strContainsAll('Victor Gutt', ['Victor'])).toEqual(true);

@@ -1,6 +1,7 @@
+import { describe, it, expect } from 'vitest';
 import strEscapeHtmlComment from '../../src/strEscapeHtmlComment';
 
-describe('str:strEscapeHtmlComment', () => {
+describe('str/strEscapeHtmlComment', () => {
     it('works', () => {
         expect(strEscapeHtmlComment('<!-- -->')).toEqual(' ');
         expect(strEscapeHtmlComment('<!---->')).toEqual('');

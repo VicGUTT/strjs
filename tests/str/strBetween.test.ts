@@ -1,6 +1,7 @@
+import { describe, it, expect } from 'vitest';
 import strBetween from '../../src/strBetween';
 
-describe('str:strBetween', () => {
+describe('str/strBetween', () => {
     it('works', () => {
         expect(strBetween('abc', 'a', 'c')).toEqual('b');
         expect(strBetween('dddabc', 'a', 'c')).toEqual('b');

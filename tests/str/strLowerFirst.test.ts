@@ -1,7 +1,8 @@
+import { describe, it, expect } from 'vitest';
 import strLcfirst from '../../src/strLcfirst';
 import strLowerFirst from '../../src/strLowerFirst';
 
-describe('str:strLowerFirst', () => {
+describe('str/strLowerFirst', () => {
     it('works', () => {
         expect(strLowerFirst).toEqual(strLcfirst);
 

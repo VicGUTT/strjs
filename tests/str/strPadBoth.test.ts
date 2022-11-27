@@ -1,6 +1,7 @@
+import { describe, it, expect } from 'vitest';
 import strPadBoth from '../../src/strPadBoth';
 
-describe('str:strPadBoth', () => {
+describe('str/strPadBoth', () => {
     it('works', () => {
         expect(strPadBoth('Alien', 10)).toEqual('  Alien   ');
         expect(strPadBoth('Alien', 10, '_')).toEqual('__Alien___');

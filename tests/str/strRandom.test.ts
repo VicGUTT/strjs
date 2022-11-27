@@ -1,6 +1,7 @@
+import { describe, it, expect } from 'vitest';
 import strRandom from '../../src/strRandom';
 
-describe('str:strRandom', () => {
+describe('str/strRandom', () => {
     it('works', () => {
         // if (!window.crypto) {
         //     // @ts-ignore

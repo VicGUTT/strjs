@@ -1,3 +1,4 @@
+import { describe, it, expect } from 'vitest';
 import Stringable from '../../src/Stringable';
 import strAfter from '../../src/strAfter';
 import strAfterLast from '../../src/strAfterLast';
@@ -133,8 +134,8 @@ describe('Stringable', () => {
             -Nelson Mandela
         `;
 
-        const stringParts = [];
-        const stringableParts = [];
+        const stringParts: string[] = [];
+        const stringableParts: string[] = [];
 
         for (const i of text) {
             stringParts.push(i);

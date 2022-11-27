@@ -1,6 +1,7 @@
+import { describe, it, expect } from 'vitest';
 import strContains from '../../src/strContains';
 
-describe('str:strContains', () => {
+describe('str/strContains', () => {
     it('works', () => {
         expect(strContains('Victor', 'Vi')).toEqual(true);
         expect(strContains('Victor', 'ctor')).toEqual(true);

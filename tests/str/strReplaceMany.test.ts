@@ -1,6 +1,7 @@
+import { describe, it, expect } from 'vitest';
 import strReplaceMany from '../../src/strReplaceMany';
 
-describe('str:strReplaceMany', () => {
+describe('str/strReplaceMany', () => {
     it('works with string parameters', () => {
         expect(strReplaceMany('o', '', 'Foobar')).toEqual('Fbar');
         expect(strReplaceMany('bar', '', 'Foobar')).toEqual('Foo');

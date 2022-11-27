@@ -1,6 +1,7 @@
+import { describe, it, expect } from 'vitest';
 import strReplaceFirst from '../../src/strReplaceFirst';
 
-describe('str:strReplaceFirst', () => {
+describe('str/strReplaceFirst', () => {
     it('works', () => {
         expect(strReplaceFirst('', 'abc', 'hello awesome world')).toEqual('hello awesome world');
         expect(strReplaceFirst('hello', '', 'hello awesome world')).toEqual(' awesome world');

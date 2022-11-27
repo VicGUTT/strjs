@@ -1,6 +1,7 @@
+import { describe, it, expect } from 'vitest';
 import strLimit from '../../src/strLimit';
 
-describe('str:strLimit', () => {
+describe('str/strLimit', () => {
     it('works with non ascii strings', () => {
         expect(strLimit('Laravel is a free, open source PHP web application framework.', 10)).toEqual('Laravel is...');
 

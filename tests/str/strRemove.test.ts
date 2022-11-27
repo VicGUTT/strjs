@@ -1,6 +1,7 @@
+import { describe, it, expect } from 'vitest';
 import strRemove from '../../src/strRemove';
 
-describe('str:strRemove', () => {
+describe('str/strRemove', () => {
     it('works', () => {
         expect(strRemove('o', 'Foobar')).toEqual('Fbar');
         expect(strRemove('bar', 'Foobar')).toEqual('Foo');

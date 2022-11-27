@@ -1,7 +1,8 @@
+import { describe, it, expect } from 'vitest';
 import Stringable from '../../src/Stringable';
 import strIsUuid from '../../src/strIsUuid';
 
-describe('str:strIsUuid', () => {
+describe('str/strIsUuid', () => {
     it('works', () => {
         const validUuidList = [
             'a0a2a2d2-0b87-4a18-83f2-2529882be2de',

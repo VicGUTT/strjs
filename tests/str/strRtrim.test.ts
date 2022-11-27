@@ -1,7 +1,8 @@
+import { describe, it, expect } from 'vitest';
 import strRtrim from '../../src/strRtrim';
 import strTrim, { STR_TRIM_RIGHT } from '../../src/strTrim';
 
-describe('str:strRtrim', () => {
+describe('str/strRtrim', () => {
     it('works', () => {
         expect(strRtrim('Hello World')).toEqual(strTrim('Hello World', undefined, STR_TRIM_RIGHT));
         expect(strRtrim(' foo ')).toEqual(strTrim(' foo ', undefined, STR_TRIM_RIGHT));

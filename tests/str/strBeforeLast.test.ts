@@ -1,9 +1,10 @@
+import { describe, it, expect } from 'vitest';
 import strBeforeLast from '../../src/strBeforeLast';
 import strPortion from '../../src/strPortion';
 
 const _strPortion = (subject: string, search: string) => strPortion(subject, search, true, false);
 
-describe('str:strBeforeLast', () => {
+describe('str/strBeforeLast', () => {
     it('works', () => {
         expect(strBeforeLast('yvette', 'tte')).toEqual(_strPortion('yvette', 'tte'));
         expect(strBeforeLast('yvette', 't')).toEqual(_strPortion('yvette', 't'));

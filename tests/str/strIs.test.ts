@@ -1,6 +1,7 @@
+import { describe, it, expect } from 'vitest';
 import strIs from '../../src/strIs';
 
-describe('str:strIs', () => {
+describe('str/strIs', () => {
     it('works', () => {
         expect(strIs('/', '/')).toEqual(true);
         expect(strIs('/', ' /')).toEqual(false);

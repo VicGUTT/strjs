@@ -1,6 +1,7 @@
+import { describe, it, expect } from 'vitest';
 import strPortion from '../../src/strPortion';
 
-describe('str:strPortion', () => {
+describe('str/strPortion', () => {
     it('works as a long form of `strBefore`', () => {
         expect(strPortion('hannah', 'nah', true, true)).toEqual('han');
         expect(strPortion('hannah', 'n', true, true)).toEqual('ha');

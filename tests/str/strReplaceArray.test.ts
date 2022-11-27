@@ -1,6 +1,7 @@
+import { describe, it, expect } from 'vitest';
 import strReplaceArray from '../../src/strReplaceArray';
 
-describe('str:strReplaceArray', () => {
+describe('str/strReplaceArray', () => {
     it('works', () => {
         expect(strReplaceArray('?', ['foo', 'bar', 'baz'], '?/?/?')).toEqual('foo/bar/baz');
         expect(strReplaceArray('?', ['foo', 'bar', 'baz'], '?/?/?/?')).toEqual('foo/bar/baz/?');

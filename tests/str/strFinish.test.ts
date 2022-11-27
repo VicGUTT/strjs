@@ -1,6 +1,7 @@
+import { describe, it, expect } from 'vitest';
 import strFinish from '../../src/strFinish';
 
-describe('str:strFinish', () => {
+describe('str/strFinish', () => {
     it('works', () => {
         expect(strFinish('ab', 'bc')).toEqual('abbc');
         expect(strFinish('abbcbc', 'bc')).toEqual('abbc');

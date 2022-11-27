@@ -1,6 +1,7 @@
+import { describe, test, expect } from 'vitest';
 import strWhenEmpty from '../../src/strWhenEmpty';
 
-describe('str:strWhenEmpty', () => {
+describe('str/strWhenEmpty', () => {
     test('when empty', () => {
         const dummy = new Dummy();
 

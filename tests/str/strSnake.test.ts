@@ -1,6 +1,7 @@
+import { describe, it, expect } from 'vitest';
 import strSnake from '../../src/strSnake';
 
-describe('str:strSnake', () => {
+describe('str/strSnake', () => {
     it('works', () => {
         expect(strSnake('LaravelPHPFramework')).toEqual('laravel_p_h_p_framework');
         expect(strSnake('LaravelPhpFramework')).toEqual('laravel_php_framework');

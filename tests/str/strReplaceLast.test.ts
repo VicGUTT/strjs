@@ -1,6 +1,7 @@
+import { describe, it, expect } from 'vitest';
 import strReplaceLast from '../../src/strReplaceLast';
 
-describe('str:strReplaceLast', () => {
+describe('str/strReplaceLast', () => {
     it('works', () => {
         expect(strReplaceLast('', 'abc', 'hello awesome world')).toEqual('hello awesome world');
         expect(strReplaceLast('world', '', 'hello awesome world')).toEqual('hello awesome ');

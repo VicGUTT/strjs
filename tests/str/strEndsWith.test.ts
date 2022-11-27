@@ -1,6 +1,7 @@
+import { describe, it, expect } from 'vitest';
 import strEndsWith from '../../src/strEndsWith';
 
-describe('str:strEndsWith', () => {
+describe('str/strEndsWith', () => {
     it('works with non ascii strings', () => {
         expect(strEndsWith('jason', 'on')).toEqual(true);
         expect(strEndsWith('jason', 'jason')).toEqual(true);

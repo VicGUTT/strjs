@@ -1,7 +1,8 @@
+import { describe, it, expect } from 'vitest';
 import strUcfirst from '../../src/strUcfirst';
 import strUpperFirst from '../../src/strUpperFirst';
 
-describe('str:strUpperFirst', () => {
+describe('str/strUpperFirst', () => {
     it('works', () => {
         expect(strUpperFirst).toEqual(strUcfirst);
 

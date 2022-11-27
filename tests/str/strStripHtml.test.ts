@@ -1,6 +1,7 @@
+import { describe, it, expect } from 'vitest';
 import strStripHtml from '../../src/strStripHtml';
 
-describe('str:strStripHtml', () => {
+describe('str/strStripHtml', () => {
     it('works', () => {
         expect(strStripHtml('<div>Hey</div>')).toEqual('Hey');
         expect(strStripHtml('<DIV>Hey</dIv>')).toEqual('Hey');

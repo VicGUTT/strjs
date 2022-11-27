@@ -1,9 +1,10 @@
+import { describe, it, expect } from 'vitest';
 import strDirname from '../../src/strDirname';
 import onWindowsOs from '../../src/utils/onWindowsOs';
 
 let _ = onWindowsOs() ? '\\' : '/';
 
-describe('str:strDirname', () => {
+describe('str/strDirname', () => {
     it('works', () => {
         expect(strDirname('')).toEqual('');
         expect(strDirname('/etc/passwd')).toEqual(`${_}etc`);
