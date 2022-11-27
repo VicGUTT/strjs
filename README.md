@@ -1077,8 +1077,8 @@ function strTitle(value: string): string;
 **Example**
 
 ```js
-strCamel('loLLIPop'); // 'Lollipop'
-strCamel('Will the real Slim Shady please stand up?'); // 'Will The Real Slim Shady Please Stand Up?'
+strTitle('loLLIPop'); // 'Lollipop'
+strTitle('Will the real Slim Shady please stand up?'); // 'Will The Real Slim Shady Please Stand Up?'
 ```
 
 ### • **str.trim / strTrim** _([Source](https://github.com/VicGUTT/strjs/blob/main/src/strTrim.ts) | [Tests](https://github.com/VicGUTT/strjs/blob/main/tests/str/strTrim.test.ts))_
