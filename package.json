@@ -10,8 +10,8 @@
         "string"
     ],
     "type": "module",
-    "main": "./dist/strjs.umd.js",
-    "module": "./dist/strjs.es.js",
+    "main": "./dist/_strjs.umd.cjs",
+    "module": "./dist/_strjs.es.js",
     "types": "./dist/index.d.ts",
     "exports": {
         ".": {
@@ -108,11 +108,11 @@
     },
     "size-limit": [
         {
-            "path": "dist/strjs.es.js",
+            "path": "dist/_strjs.es.js",
             "limit": "5 KB"
         },
         {
-            "path": "dist/strjs.umd.js",
+            "path": "dist/_strjs.umd.cjs",
             "limit": "5 KB"
         },
         {

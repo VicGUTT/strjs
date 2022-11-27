@@ -39,7 +39,7 @@ export default defineConfig({
                 .split('-')
                 .map((word) => `${word.charAt(0).toUpperCase()}${word.slice(1).toLowerCase()}`)
                 .join(''),
-            fileName: (format) => `${libName}.${format}.js`,
+            fileName: (format) => `_${libName}.${format}.${format === 'umd' ? 'c' : ''}js`,
         },
     },
     plugins,
