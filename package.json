@@ -9,6 +9,7 @@
         "utilities",
         "string"
     ],
+    "type": "module",
     "main": "./dist/strjs.umd.js",
     "module": "./dist/strjs.es.js",
     "types": "./dist/index.d.ts",

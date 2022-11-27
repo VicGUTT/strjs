@@ -33,11 +33,11 @@
                             "license",
                             "keywords",
 
+                            "type",
                             "main",
                             "module",
                             "types",
                             "typings",
-                            "type",
                             "exports",
                             "files",
                             "engines",
