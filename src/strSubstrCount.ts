@@ -24,3 +24,15 @@ export default function strSubstrCount(haystack: string, needle: string, offset 
 
     return (haystack.match(new RegExp(escapeRegExp(needle), 'g')) || []).length;
 }
+
+// TODO: Handle deprecation "substr" in favor of "slice"
+// export default function strSubstrCount(haystack: string, needle: string, offset = 0, length?: number): number {
+//     // if (typeof length === 'number' && length < 0) {
+//     //     length = haystack.length - length;
+//     // }
+
+//     // haystack = haystack.substr(offset, length ?? haystack.length); <-- `substr` is deprecated
+//     haystack = haystack.slice(offset, typeof length !== 'undefined' ? length + 1 : length);
+
+//     return (haystack.match(new RegExp(escapeRegExp(needle), 'g')) || []).length;
+// }
