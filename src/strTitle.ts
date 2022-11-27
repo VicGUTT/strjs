@@ -10,8 +10,8 @@ const CACHE: Record<string, string> = {};
  *
  * @example
  * ```js
- * strCamel('loLLIPop'); // 'Lollipop'
- * strCamel('Will the real Slim Shady please stand up?'); // 'Will The Real Slim Shady Please Stand Up?'
+ * strTitle('loLLIPop'); // 'Lollipop'
+ * strTitle('Will the real Slim Shady please stand up?'); // 'Will The Real Slim Shady Please Stand Up?'
  * ```
  */
 export default function strTitle(value: string): string {
