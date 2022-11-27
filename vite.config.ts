@@ -1,3 +1,5 @@
+/// <reference types="vitest" />
+
 import fs from 'fs';
 import path from 'path';
 import { defineConfig } from 'vite';
@@ -8,9 +10,6 @@ const libName = lib.name.split('/')[1] ?? lib.name;
 const year = new Date().getFullYear();
 
 export default defineConfig({
-    esbuild: {
-        minify: true,
-    },
     build: {
         /**
          * @see https://vitejs.dev/config/#build-target
@@ -21,9 +20,6 @@ export default defineConfig({
          * @see https://vitejs.dev/config/#build-chunksizewarninglimit
          */
         chunkSizeWarningLimit: 10, // 10 kbs
-
-        // manifest: true,
-        minify: 'terser',
 
         /**
          * @see https://vitejs.dev/config/#build-rollupoptions
@@ -47,4 +43,23 @@ export default defineConfig({
         },
     },
     plugins,
+    /**
+     * @see https://vitest.dev/config/#configuration
+     */
+    test: {
+        // global: true,
+        environment: 'node',
+        /**
+         * @see https://github.com/vitest-dev/vitest/blob/95b1ba4c17df1677136b39762c19d859db3f4cb2/packages/vitest/src/types/coverage.ts
+         */
+        coverage: {
+            reportsDirectory: '.coverage',
+            include: ['src/**/*.{ts,js}'],
+            // Threshold
+            statements: 90,
+            branches: 90,
+            functions: 90,
+            lines: 90,
+        },
+    },
 });
