@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
-import strRtrim from '../../src/strRtrim';
-import strTrim, { STR_TRIM_RIGHT } from '../../src/strTrim';
+import strRtrim from '../../src/strRtrim.js';
+import strTrim, { STR_TRIM_RIGHT } from '../../src/strTrim.js';
 
 describe('str/strRtrim', () => {
     it('works', () => {

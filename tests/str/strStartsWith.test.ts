@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import strStartsWith from '../../src/strStartsWith';
+import strStartsWith from '../../src/strStartsWith.js';
 
 describe('str/strStartsWith', () => {
     it('works with non ascii strings', () => {

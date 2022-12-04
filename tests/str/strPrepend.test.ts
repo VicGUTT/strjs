@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import strPrepend from '../../src/strPrepend';
+import strPrepend from '../../src/strPrepend.js';
 
 describe('str/strPrepend', () => {
     it('works', () => {

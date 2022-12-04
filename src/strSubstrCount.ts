@@ -1,4 +1,4 @@
-import escapeRegExp from './utils/escapeRegExp';
+import escapeRegExp from './utils/escapeRegExp.js';
 
 /**
  * Returns the number of substring occurrences.

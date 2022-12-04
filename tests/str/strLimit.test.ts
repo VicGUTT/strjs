@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import strLimit from '../../src/strLimit';
+import strLimit from '../../src/strLimit.js';
 
 describe('str/strLimit', () => {
     it('works with non ascii strings', () => {

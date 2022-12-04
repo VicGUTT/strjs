@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
-import strAfterLast from '../../src/strAfterLast';
-import strPortion from '../../src/strPortion';
+import strAfterLast from '../../src/strAfterLast.js';
+import strPortion from '../../src/strPortion.js';
 
 const _strPortion = (subject: string, search: string) => strPortion(subject, search, false, false);
 

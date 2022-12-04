@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 
-import consoleMessage from './helpers/consoleMessage';
-import compileAllTsFiles from './actions/compileAllTsFiles';
-import generateReadme from './actions/generateReadme';
+import consoleMessage from './helpers/consoleMessage.js';
+import compileAllTsFiles from './actions/compileAllTsFiles.js';
+import generateReadme from './actions/generateReadme.js';
 
 export default [
     {

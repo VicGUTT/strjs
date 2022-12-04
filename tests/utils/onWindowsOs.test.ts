@@ -3,7 +3,7 @@
  */
 
 import { describe, it, expect } from 'vitest';
-import onWindowsOs from '../../src/utils/onWindowsOs';
+import onWindowsOs from '../../src/utils/onWindowsOs.js';
 
 const isReallyOnWindows = process.platform === 'win32';
 

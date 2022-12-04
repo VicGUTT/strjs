@@ -1,7 +1,7 @@
 import { describe, it, test, expect } from 'vitest';
-import file from './__utils/file';
-import Stringable from '../src/Stringable';
-import str from '../src';
+import file from './__utils/file.js';
+import Stringable from '../src/Stringable.js';
+import str from '../src/index.js';
 
 type _Meta = {
     glob: (...args: unknown[]) => Record<string, { default: () => unknown }>;

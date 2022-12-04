@@ -1,4 +1,4 @@
-import strPortion from './strPortion';
+import strPortion from './strPortion.js';
 
 /**
  * Return the remainder of a string after the last occurrence of a given value.

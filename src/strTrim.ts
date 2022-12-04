@@ -1,4 +1,4 @@
-import escapeRegExp from './utils/escapeRegExp';
+import escapeRegExp from './utils/escapeRegExp.js';
 
 export const STR_TRIM_LEFT = 'left';
 export const STR_TRIM_RIGHT = 'right';

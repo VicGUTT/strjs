@@ -1,4 +1,4 @@
-import escapeRegExp from './utils/escapeRegExp';
+import escapeRegExp from './utils/escapeRegExp.js';
 
 /**
  * Determine if a given string matches a given pattern.

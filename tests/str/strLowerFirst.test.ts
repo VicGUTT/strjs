@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
-import strLcfirst from '../../src/strLcfirst';
-import strLowerFirst from '../../src/strLowerFirst';
+import strLcfirst from '../../src/strLcfirst.js';
+import strLowerFirst from '../../src/strLowerFirst.js';
 
 describe('str/strLowerFirst', () => {
     it('works', () => {

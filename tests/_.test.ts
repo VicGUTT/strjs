@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import fs from 'fs';
-import paths from './__utils/paths';
-import file from './__utils/file';
+import paths from './__utils/paths.js';
+import file from './__utils/file.js';
 
 const makeTestFileName = (file: string) => file.replace(/\.ts$/, '.test.ts');
 

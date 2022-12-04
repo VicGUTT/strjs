@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
-import strUcfirst from '../../src/strUcfirst';
-import strUpperFirst from '../../src/strUpperFirst';
+import strUcfirst from '../../src/strUcfirst.js';
+import strUpperFirst from '../../src/strUpperFirst.js';
 
 describe('str/strUpperFirst', () => {
     it('works', () => {

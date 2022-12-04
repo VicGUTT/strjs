@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import strSubstrCount from '../../src/strSubstrCount';
+import strSubstrCount from '../../src/strSubstrCount.js';
 
 describe('str/strSubstrCount', () => {
     it('works', () => {

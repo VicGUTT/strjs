@@ -1,4 +1,4 @@
-import escapeRegExp from './utils/escapeRegExp';
+import escapeRegExp from './utils/escapeRegExp.js';
 
 /**
  * Replace the first occurrence of a given value in the string.

@@ -1,4 +1,4 @@
-import strLcfirst from './strLcfirst';
+import strLcfirst from './strLcfirst.js';
 
 /**
  * Make a string's first character lowercase.

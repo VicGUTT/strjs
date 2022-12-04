@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import strReplaceArray from '../../src/strReplaceArray';
+import strReplaceArray from '../../src/strReplaceArray.js';
 
 describe('str/strReplaceArray', () => {
     it('works', () => {

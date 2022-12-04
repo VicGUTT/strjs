@@ -1,4 +1,4 @@
-import strLtrim from './strLtrim';
+import strLtrim from './strLtrim.js';
 
 /**
  * Trim the left side (start) of a string of the given characters.

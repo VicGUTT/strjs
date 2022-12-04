@@ -1,4 +1,4 @@
-import strPortion from './strPortion';
+import strPortion from './strPortion.js';
 
 /**
  * Get the portion of a string before the last occurrence of a given value.

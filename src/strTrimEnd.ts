@@ -1,4 +1,4 @@
-import strRtrim from './strRtrim';
+import strRtrim from './strRtrim.js';
 
 /**
  * Trim the right side (end) of a string of the given characters.

@@ -1,4 +1,4 @@
-import strContains from './strContains';
+import strContains from './strContains.js';
 
 /**
  * Parse a Class[@]method style callback into class and method.

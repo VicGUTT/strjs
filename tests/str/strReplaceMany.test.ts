@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import strReplaceMany from '../../src/strReplaceMany';
+import strReplaceMany from '../../src/strReplaceMany.js';
 
 describe('str/strReplaceMany', () => {
     it('works with string parameters', () => {

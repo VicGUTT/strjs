@@ -1,4 +1,4 @@
-import strReplaceMany from './strReplaceMany';
+import strReplaceMany from './strReplaceMany.js';
 
 /**
  * Remove any occurrence of the given string in the subject.

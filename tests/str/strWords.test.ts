@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import strWords from '../../src/strWords';
+import strWords from '../../src/strWords.js';
 
 describe('str/strWords', () => {
     it('works', () => {

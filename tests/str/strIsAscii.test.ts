@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
-import strIsAscii from '../../src/strIsAscii';
-import asciiCharacters from '../__Fixtures/ascii-characters';
-import nonAsciiCharacters from '../__Fixtures/non-ascii-characters';
+import strIsAscii from '../../src/strIsAscii.js';
+import asciiCharacters from '../__Fixtures/ascii-characters.js';
+import nonAsciiCharacters from '../__Fixtures/non-ascii-characters.js';
 
 describe('str/strIsAscii', () => {
     it('works', () => {

@@ -1,4 +1,4 @@
-import escapeRegExp from './utils/escapeRegExp';
+import escapeRegExp from './utils/escapeRegExp.js';
 
 /**
  * Generate a URL friendly "slug" from a given string.

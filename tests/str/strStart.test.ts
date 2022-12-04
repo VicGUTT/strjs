@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import strStart from '../../src/strStart';
+import strStart from '../../src/strStart.js';
 
 describe('str/strStart', () => {
     it('works', () => {

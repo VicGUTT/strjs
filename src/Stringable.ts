@@ -1,53 +1,53 @@
 // import { macroable, polyfill } from '@vicgutt/macrojs';
 // import { PolyfillObject } from '@vicgutt/macrojs/types';
-import strAfter from './strAfter';
-import strAfterLast from './strAfterLast';
-import strAppend from './strAppend';
-import strBasename from './strBasename';
-import strBefore from './strBefore';
-import strBeforeLast from './strBeforeLast';
-import strBetween from './strBetween';
-import strCamel from './strCamel';
-import strContains from './strContains';
-import strContainsAll from './strContainsAll';
-import strDirname from './strDirname';
-import strEndsWith from './strEndsWith';
-import strEscapeHtml from './strEscapeHtml';
-import strEscapeHtmlComment from './strEscapeHtmlComment';
-import strFinish from './strFinish';
-import strIs from './strIs';
-import strIsAscii from './strIsAscii';
-import strIsUuid from './strIsUuid';
-import strKebab from './strKebab';
-import strLcfirst from './strLcfirst';
-import strLimit from './strLimit';
-import strLtrim from './strLtrim';
-import strPadBoth from './strPadBoth';
-import strParseCallback from './strParseCallback';
-import strPortion from './strPortion';
-import strPrepend from './strPrepend';
-import strRandom from './strRandom';
-import strRemove from './strRemove';
-import strReplaceArray from './strReplaceArray';
-import strReplaceFirst from './strReplaceFirst';
-import strReplaceLast from './strReplaceLast';
-import strReplaceMany from './strReplaceMany';
-import strRtrim from './strRtrim';
-import strSanitize from './strSanitize';
-import strSlug from './strSlug';
-import strSnake from './strSnake';
-import strStart from './strStart';
-import strStartsWith from './strStartsWith';
-import strStripHtml from './strStripHtml';
-import strStudly from './strStudly';
-import strSubstrCount from './strSubstrCount';
-import strTitle from './strTitle';
-import strTrim, { STR_TRIM_CHARS } from './strTrim';
-import strUcfirst from './strUcfirst';
-import strUcwords, { STR_UCWORDS_CHARS } from './strUcwords';
-import strWhen from './strWhen';
-import strWhenEmpty from './strWhenEmpty';
-import strWords from './strWords';
+import strAfter from './strAfter.js';
+import strAfterLast from './strAfterLast.js';
+import strAppend from './strAppend.js';
+import strBasename from './strBasename.js';
+import strBefore from './strBefore.js';
+import strBeforeLast from './strBeforeLast.js';
+import strBetween from './strBetween.js';
+import strCamel from './strCamel.js';
+import strContains from './strContains.js';
+import strContainsAll from './strContainsAll.js';
+import strDirname from './strDirname.js';
+import strEndsWith from './strEndsWith.js';
+import strEscapeHtml from './strEscapeHtml.js';
+import strEscapeHtmlComment from './strEscapeHtmlComment.js';
+import strFinish from './strFinish.js';
+import strIs from './strIs.js';
+import strIsAscii from './strIsAscii.js';
+import strIsUuid from './strIsUuid.js';
+import strKebab from './strKebab.js';
+import strLcfirst from './strLcfirst.js';
+import strLimit from './strLimit.js';
+import strLtrim from './strLtrim.js';
+import strPadBoth from './strPadBoth.js';
+import strParseCallback from './strParseCallback.js';
+import strPortion from './strPortion.js';
+import strPrepend from './strPrepend.js';
+import strRandom from './strRandom.js';
+import strRemove from './strRemove.js';
+import strReplaceArray from './strReplaceArray.js';
+import strReplaceFirst from './strReplaceFirst.js';
+import strReplaceLast from './strReplaceLast.js';
+import strReplaceMany from './strReplaceMany.js';
+import strRtrim from './strRtrim.js';
+import strSanitize from './strSanitize.js';
+import strSlug from './strSlug.js';
+import strSnake from './strSnake.js';
+import strStart from './strStart.js';
+import strStartsWith from './strStartsWith.js';
+import strStripHtml from './strStripHtml.js';
+import strStudly from './strStudly.js';
+import strSubstrCount from './strSubstrCount.js';
+import strTitle from './strTitle.js';
+import strTrim, { STR_TRIM_CHARS } from './strTrim.js';
+import strUcfirst from './strUcfirst.js';
+import strUcwords, { STR_UCWORDS_CHARS } from './strUcwords.js';
+import strWhen from './strWhen.js';
+import strWhenEmpty from './strWhenEmpty.js';
+import strWords from './strWords.js';
 
 class Stringable extends String {
     constructor(value = '') {
@@ -710,7 +710,7 @@ class Stringable extends String {
         this.dump();
 
         if (typeof process !== 'undefined') {
-            process.exit(1);
+            process.exit(1); // eslint-disable-line n/no-process-exit
         }
     }
 

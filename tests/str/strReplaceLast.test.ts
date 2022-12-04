@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import strReplaceLast from '../../src/strReplaceLast';
+import strReplaceLast from '../../src/strReplaceLast.js';
 
 describe('str/strReplaceLast', () => {
     it('works', () => {

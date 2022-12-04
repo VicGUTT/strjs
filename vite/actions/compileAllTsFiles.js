@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 
 import fs from 'fs';
-import execAsync from '../helpers/execAsync';
-import consoleMessage from '../helpers/consoleMessage';
+import execAsync from '../helpers/execAsync.js';
+import consoleMessage from '../helpers/consoleMessage.js';
 
 export default async function compileAllTsFiles() {
     const paths = {

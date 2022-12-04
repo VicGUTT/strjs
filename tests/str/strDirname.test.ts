@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
-import strDirname from '../../src/strDirname';
-import onWindowsOs from '../../src/utils/onWindowsOs';
+import strDirname from '../../src/strDirname.js';
+import onWindowsOs from '../../src/utils/onWindowsOs.js';
 
 let _ = onWindowsOs() ? '\\' : '/';
 

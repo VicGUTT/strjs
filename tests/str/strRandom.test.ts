@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import strRandom from '../../src/strRandom';
+import strRandom from '../../src/strRandom.js';
 
 describe('str/strRandom', () => {
     it('works', () => {

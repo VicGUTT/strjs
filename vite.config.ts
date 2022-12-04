@@ -3,7 +3,7 @@
 import fs from 'fs';
 import path from 'path';
 import { defineConfig } from 'vite';
-import plugins from './vite/plugins';
+import plugins from './vite/plugins.js';
 
 const lib = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
 const libName = lib.name.split('/')[1] ?? lib.name;

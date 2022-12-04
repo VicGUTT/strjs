@@ -1,4 +1,4 @@
-import strContains from './strContains';
+import strContains from './strContains.js';
 
 /**
  * Determine if a given string contains all array values.

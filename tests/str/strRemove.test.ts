@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import strRemove from '../../src/strRemove';
+import strRemove from '../../src/strRemove.js';
 
 describe('str/strRemove', () => {
     it('works', () => {

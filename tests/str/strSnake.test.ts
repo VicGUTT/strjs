@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import strSnake from '../../src/strSnake';
+import strSnake from '../../src/strSnake.js';
 
 describe('str/strSnake', () => {
     it('works', () => {

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import strEscapeHtmlComment from '../../src/strEscapeHtmlComment';
+import strEscapeHtmlComment from '../../src/strEscapeHtmlComment.js';
 
 describe('str/strEscapeHtmlComment', () => {
     it('works', () => {

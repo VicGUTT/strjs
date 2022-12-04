@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import strContainsAll from '../../src/strContainsAll';
+import strContainsAll from '../../src/strContainsAll.js';
 
 describe('str/strContainsAll', () => {
     it('works', () => {

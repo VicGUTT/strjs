@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import strAppend from '../../src/strAppend';
+import strAppend from '../../src/strAppend.js';
 
 describe('str/strAppend', () => {
     it('works', () => {

@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
-import Stringable from '../../src/Stringable';
-import strIsUuid from '../../src/strIsUuid';
+import Stringable from '../../src/Stringable.js';
+import strIsUuid from '../../src/strIsUuid.js';
 
 describe('str/strIsUuid', () => {
     it('works', () => {

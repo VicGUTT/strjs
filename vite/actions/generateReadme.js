@@ -3,8 +3,8 @@
 
 import fs from 'fs';
 import jsdoc2md from 'jsdoc-to-markdown';
-import consoleMessage from '../helpers/consoleMessage';
-import execAsync from '../helpers/execAsync';
+import consoleMessage from '../helpers/consoleMessage.js';
+import execAsync from '../helpers/execAsync.js';
 
 export default async function generateReadme() {
     consoleMessage('Generating `README.md`...');

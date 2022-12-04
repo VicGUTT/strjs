@@ -1,4 +1,4 @@
-import strSnake from './strSnake';
+import strSnake from './strSnake.js';
 
 /**
  * Convert a string to "kebab-case".

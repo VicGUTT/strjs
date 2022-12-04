@@ -1,5 +1,5 @@
-import strReplaceMany from './strReplaceMany';
-import strUcwords from './strUcwords';
+import strReplaceMany from './strReplaceMany.js';
+import strUcwords from './strUcwords.js';
 
 const CACHE: Record<string, string> = {};
 

@@ -1,5 +1,5 @@
 import fs from 'fs';
-import paths from './paths';
+import paths from './paths.js';
 
 export default {
     files(path: string): string[] {

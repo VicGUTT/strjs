@@ -1,5 +1,5 @@
 import { describe, test, expect } from 'vitest';
-import strWhen from '../../src/strWhen';
+import strWhen from '../../src/strWhen.js';
 
 describe('str/strWhen', () => {
     test('when truthy', () => {

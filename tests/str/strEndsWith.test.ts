@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import strEndsWith from '../../src/strEndsWith';
+import strEndsWith from '../../src/strEndsWith.js';
 
 describe('str/strEndsWith', () => {
     it('works with non ascii strings', () => {

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import strPadBoth from '../../src/strPadBoth';
+import strPadBoth from '../../src/strPadBoth.js';
 
 describe('str/strPadBoth', () => {
     it('works', () => {

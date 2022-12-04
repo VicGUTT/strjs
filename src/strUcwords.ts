@@ -1,4 +1,4 @@
-import escapeRegExp from './utils/escapeRegExp';
+import escapeRegExp from './utils/escapeRegExp.js';
 
 export const STR_UCWORDS_CHARS = [' ', '\t', '\r', '\n', '\r\n', '\f', '\v'];
 

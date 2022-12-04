@@ -1,4 +1,4 @@
-import strUcwords from './strUcwords';
+import strUcwords from './strUcwords.js';
 
 const CACHE: Record<string, string> = {};
 

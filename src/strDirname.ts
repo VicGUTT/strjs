@@ -1,4 +1,4 @@
-import onWindowsOs from './utils/onWindowsOs';
+import onWindowsOs from './utils/onWindowsOs.js';
 
 /**
  * Get the parent directory's path.

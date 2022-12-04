@@ -1,5 +1,5 @@
-import strLcfirst from './strLcfirst';
-import strStudly from './strStudly';
+import strLcfirst from './strLcfirst.js';
+import strStudly from './strStudly.js';
 
 const CACHE: Record<string, string> = {};
 

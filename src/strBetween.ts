@@ -1,5 +1,5 @@
-import strBeforeLast from './strBeforeLast';
-import strAfter from './strAfter';
+import strBeforeLast from './strBeforeLast.js';
+import strAfter from './strAfter.js';
 
 /**
  * Get the portion of a string between two given values.

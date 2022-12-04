@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import strBetween from '../../src/strBetween';
+import strBetween from '../../src/strBetween.js';
 
 describe('str/strBetween', () => {
     it('works', () => {

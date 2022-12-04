@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import strReplaceFirst from '../../src/strReplaceFirst';
+import strReplaceFirst from '../../src/strReplaceFirst.js';
 
 describe('str/strReplaceFirst', () => {
     it('works', () => {

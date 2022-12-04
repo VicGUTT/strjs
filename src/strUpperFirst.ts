@@ -1,4 +1,4 @@
-import strUcfirst from './strUcfirst';
+import strUcfirst from './strUcfirst.js';
 
 /**
  * Make a string's first character uppercase.

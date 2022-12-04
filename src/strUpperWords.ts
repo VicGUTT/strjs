@@ -1,4 +1,4 @@
-import strUcwords from './strUcwords';
+import strUcwords from './strUcwords.js';
 
 /**
  * Uppercase the first character of each word in a string.

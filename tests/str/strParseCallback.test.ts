@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import strParseCallback from '../../src/strParseCallback';
+import strParseCallback from '../../src/strParseCallback.js';
 
 describe('str/strParseCallback', () => {
     it('works', () => {

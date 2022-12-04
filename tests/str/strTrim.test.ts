@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import strTrim, { STR_TRIM_BOTH, STR_TRIM_LEFT, STR_TRIM_RIGHT } from '../../src/strTrim';
+import strTrim, { STR_TRIM_BOTH, STR_TRIM_LEFT, STR_TRIM_RIGHT } from '../../src/strTrim.js';
 
 describe('str/strTrim', () => {
     it('can trim the left side (start)', () => {

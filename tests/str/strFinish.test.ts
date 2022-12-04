@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import strFinish from '../../src/strFinish';
+import strFinish from '../../src/strFinish.js';
 
 describe('str/strFinish', () => {
     it('works', () => {

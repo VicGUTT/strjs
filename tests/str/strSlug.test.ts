@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import strSlug from '../../src/strSlug';
+import strSlug from '../../src/strSlug.js';
 
 describe('str/strSlug', () => {
     it('works', () => {

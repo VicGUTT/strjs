@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import strStripHtml from '../../src/strStripHtml';
+import strStripHtml from '../../src/strStripHtml.js';
 
 describe('str/strStripHtml', () => {
     it('works', () => {

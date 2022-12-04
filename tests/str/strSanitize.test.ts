@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import strSanitize from '../../src/strSanitize';
+import strSanitize from '../../src/strSanitize.js';
 
 describe('str/strSanitize', () => {
     it('works', () => {

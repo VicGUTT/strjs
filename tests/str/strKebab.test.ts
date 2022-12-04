@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import strKebab from '../../src/strKebab';
+import strKebab from '../../src/strKebab.js';
 
 describe('str/strKebab', () => {
     it('works', () => {

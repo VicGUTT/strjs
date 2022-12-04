@@ -1,5 +1,5 @@
 import { describe, test, expect } from 'vitest';
-import strWhenEmpty from '../../src/strWhenEmpty';
+import strWhenEmpty from '../../src/strWhenEmpty.js';
 
 describe('str/strWhenEmpty', () => {
     test('when empty', () => {

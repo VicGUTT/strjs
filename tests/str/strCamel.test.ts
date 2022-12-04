@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import strCamel from '../../src/strCamel';
+import strCamel from '../../src/strCamel.js';
 
 describe('str/strCamel', () => {
     it('works', () => {

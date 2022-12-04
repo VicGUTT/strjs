@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import strUcfirst from '../../src/strUcfirst';
+import strUcfirst from '../../src/strUcfirst.js';
 
 describe('str/strUcfirst', () => {
     it('works', () => {

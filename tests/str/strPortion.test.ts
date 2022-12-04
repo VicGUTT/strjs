@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import strPortion from '../../src/strPortion';
+import strPortion from '../../src/strPortion.js';
 
 describe('str/strPortion', () => {
     it('works as a long form of `strBefore`', () => {

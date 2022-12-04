@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
-import strUcwords from '../../src/strUcwords';
-import strUpperWords from '../../src/strUpperWords';
+import strUcwords from '../../src/strUcwords.js';
+import strUpperWords from '../../src/strUpperWords.js';
 
 describe('str/strUpperWords', () => {
     it('works', () => {

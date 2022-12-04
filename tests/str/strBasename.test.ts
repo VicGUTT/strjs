@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import strBasename from '../../src/strBasename';
+import strBasename from '../../src/strBasename.js';
 
 describe('str/strBasename', () => {
     it('works', () => {
